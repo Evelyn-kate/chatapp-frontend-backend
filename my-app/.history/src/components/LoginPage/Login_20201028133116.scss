@@ -1,0 +1,55 @@
+/* styling the login page*/
+
+
+/* form {
+    border: 3px solid #7c84ec;
+    position: absolute;
+    background: blue;
+} */
+
+.form-login {
+    background-color: #318CE7;
+    border: 3px solid #7c84ec;
+    position: absolute;
+}
+
+.box-login {
+    padding-top: 50px;
+}
+
+button {
+    background-color: #dbf113;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 75%;
+    float: right;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+span.psw {
+    float: left;
+    //padding-top: 16px;
+}
+
+.btn btn-outline-success my-2 my-sm-0 {
+    width: 40%;
+    padding-block: 80px;
+}
+
+@import "~bootstrap/scss/bootstrap";

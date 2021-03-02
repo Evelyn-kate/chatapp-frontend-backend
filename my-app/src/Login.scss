@@ -1,0 +1,332 @@
+/* styling the login page*/
+
+.form-login {
+    background-color: #318CE7;
+    border: 3px solid #7c84ec;
+    position: absolute;
+}
+
+.box-login {
+    padding-top: 50px;
+}
+
+.btn btn-success btn-md{
+    width: 0px;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right:25px;
+}
+
+button {
+    background-color: #6495ed;
+    color: #fff;
+    padding: 6px 20px;
+    font-size: 16px;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height:100%;
+    text-align: right;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button.logout {
+    width: initial;
+    color: #fff
+}
+
+
+span.psw {
+    float: left;
+    //padding-top: 16px;
+}
+
+.btn btn-outline-success my-2 my-sm-0 {
+    width: 40%;
+    padding-block: 80px;
+}
+
+// block user button styles
+
+.blocked {
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    
+}
+
+//unblock user button styles
+
+.unblocked {
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff4500 ;
+}
+
+// Welcome style
+.main-text {
+    display: flex;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*my style sidebar start*/
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 700px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#sidebar {
+    /* don't forget to add all the previously mentioned styles here too */
+    background: #fff;
+    color: #fff;
+    transition: all 0.3s;
+    height: 100%;
+   /* width: 24%;
+    position: fixed;*/
+    //min-height: 1000px;
+    z-index: 999;
+    overflow: auto;
+    top: 0;
+    bottom: 0px;
+    left: 0;
+  /*  border-right: 1px solid cornflowerblue;
+    border-radius: 12px 12px 12px 12px;*/
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+   // background: cornflowerblue;
+    font-family: Lucida Console, Courier New, monospace;
+    color: #6495ed;
+    margin-top: 10px;
+    margin-bottom: -15px;
+}
+
+#sidebar .sidebar-bottom {
+    padding: 20px;
+    background: #6495ed;
+    font-family: Lucida Console, Courier New, monospace;
+    color: white;
+    min-height: 500px;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    //  border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+#sidebar ul li a:hover {
+    color: #000;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #000;
+    background: #fff;
+}
+.panel{
+    margin-top: 40px;
+}
+.contenu{
+    min-height: 617px;
+    border-radius: 15px 15px 15px 15px;
+    border: 1.5px solid #000000;
+    overflow-x: hidden;
+    overflow-y: auto
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #fff;
+}
+
+.image-container {
+    height: 90px;
+
+}
+
+.avatar{
+    height: 100%;
+    width: 50px;
+   // width: auto;
+}
+
+
+/*my style sidebar end*/
+
+.navbarr {
+    background-color: #6495ed;
+    padding-left: 0%;
+    border-radius: 8px;
+}
+
+.navbardiv {
+    margin-left: 2px;
+    
+
+}
+
+.fa {
+    color: indigo;
+    font-size: 16px;
+}
+.fa fa-search{
+   font-size: 20px;
+}
+
+
+/*message start style*/
+.custom-container{
+    height: calc(100vh - 64px);
+}
+
+.flex-content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.head-messages{
+    flex: 0 0 auto;
+    overflow: auto;
+}
+
+.main-messages{
+    flex: 1 1 auto;
+    display: flex;
+}
+
+.main-messages .card{
+    flex: 0 0 auto;
+    overflow: auto;
+}
+
+.main-messages .messages{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    overflow-y: auto;
+}
+
+.messages .content{
+    display: inline-block;
+    width: 100%;
+}
+
+.msgleft{
+    width: 40%;
+    background: #eee;
+    box-shadow: 0 5px 10px 0 rgba(#000, 0.05);
+    padding: 5px 10px 5px 12px;
+    margin-bottom: 2.5rem;
+    display: inline-block;
+    float: left;
+    margin: 26px 0 26px;
+    border-radius: 15px 15px 15px 0;
+}
+
+.msgright{
+    width: 40%;
+    color: #fff;
+    background: #6d7fcc;
+    box-shadow: 0 5px 10px 0 rgba(#000, 0.05);
+    padding: 5px 10px 5px 12px;
+    margin-bottom: 2.5rem;
+    display: inline-block;
+    float: right;
+    margin-right: 0;
+    margin-left: 16px;
+    border-radius:  15px 15px 0px 12px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font: 13px Helvetica, Arial; }
+      form .card{ background: #fff; padding: 3px; position: fixed; bottom: 0; width: 100%; height: 100%;}
+      form input { border: 0; padding-right: 5px; width: fit-content; margin-right: 0.5%; }
+      form button.custom-send { width: 9%; background: #6495ed; border: none; padding: 10px; text-align: center;}
+      #messages { list-style-type: none; margin: 0; padding: 0; }
+      #messages li { padding: 5px 10px; }
+      #messages li:nth-child(odd) { background: #eee; }
+
+      .flex {
+        display: flex;
+        flex-direction: row;
+     }
+/*message styles end*/
+
+
+
+@import "~bootstrap/scss/bootstrap";
+@import "../node_modules/react-toggle-switch/dist/css/switch.min.css" 
